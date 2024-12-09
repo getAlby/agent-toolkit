@@ -1,19 +1,19 @@
 import {z} from 'zod';
 
 export const getBalanceParameters = z
-  .void()
+  .object({})
   .describe(
     'Retrieve the current balance in the Lightning wallet. No input required.'
   );
 
 export const getBudgetParameters = z
-  .void()
+  .object({})
   .describe(
     'Retrieve the current spending budget and usage in the Lightning wallet. No input required.'
   );
 
 export const getInfoParameters = z
-  .void()
+  .object({})
   .describe(
     'Retrieve general information about the Lightning node and its capabilities. No input required.'
   );
